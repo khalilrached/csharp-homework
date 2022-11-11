@@ -1,6 +1,6 @@
-radioButton1=False
+radioButton1=True
 radioButton2=False
-radioButton3=True
+radioButton3=False
 checkBox1=False
-checkBox2=True
+checkBox2=False
 checkBox3=True

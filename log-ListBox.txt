@@ -1,0 +1,16 @@
+radioButton1=True
+checkBox1=True
+checkBox1=False
+checkBox1=True
+checkBox1=False
+checkBox1=True
+checkBox1=False
+checkBox1=True
+checkBox1=False
+checkBox1=True
+checkBox1=False
+checkBox1=True
+checkBox1=False
+checkBox1=True
+checkBox1=False
+checkBox3=True

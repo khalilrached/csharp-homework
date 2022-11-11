@@ -13,51 +13,74 @@ namespace tp2
 {
     public partial class Form1 : Form
     {
+        //this with richBoxMethod
         public static Dictionary<String, bool> state = new Dictionary<String,bool>();
+        //this with listBox method
+        BindingList<string> list = new BindingList<string>();
+
         public Form1()
         {
             InitializeComponent();
+            //this with richBoxMethod mehod
             state.Add("radioButton1",true);
             state.Add("radioButton2",false);
             state.Add("radioButton3",false);
             state.Add("checkBox1",false);
             state.Add("checkBox2",false);
             state.Add("checkBox3",false);
+            //this with listBox Method
+            listBox1.DataSource = list;
+            list.ListChanged += new ListChangedEventHandler(list_ListChanged);
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            state["radioButton1"] = radioButton1.Checked;
+            //this with listBox Method
+            list.Add(((RadioButton)sender).Name +"="+ ((RadioButton)sender).Checked);
+            //this with richTextBox Method
+            state[((RadioButton)sender).Name] = ((RadioButton)sender).Checked;
             richTextBox1.Text += " ";
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            state["radioButton2"] = radioButton2.Checked;
+            //this with listBox Method
+            list.Add(((RadioButton)sender).Name + "=" + ((RadioButton)sender).Checked);
+            //this with richTextBox Method
+            state[((RadioButton)sender).Name] = ((RadioButton)sender).Checked;
             richTextBox1.Text += " ";
         }
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
-            state["radioButton3"] = radioButton3.Checked;
+            //
+            list.Add(((RadioButton)sender).Name + "=" + ((RadioButton)sender).Checked);
+            
+            state[((RadioButton)sender).Name] = ((RadioButton)sender).Checked;
             richTextBox1.Text += " ";
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            state["checkBox1"] = checkBox1.Checked;
+            list.Add(((CheckBox)sender).Name + "=" + ((CheckBox)sender).Checked);
+            
+            state[((CheckBox)sender).Name] = ((CheckBox)sender).Checked;
             richTextBox1.Text += " ";
         }
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
-            state["checkBox2"] = checkBox2.Checked;
+            list.Add(((CheckBox)sender).Name + "=" + ((CheckBox)sender).Checked);
+            
+            state[((CheckBox)sender).Name] = ((CheckBox)sender).Checked;
             richTextBox1.Text += " ";
         }
 
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
         {
-            state["checkBox3"] = checkBox3.Checked;
+            list.Add(((CheckBox)sender).Name + "=" + ((CheckBox)sender).Checked);
+            
+            state[((CheckBox)sender).Name] = ((CheckBox)sender).Checked;
             richTextBox1.Text += " ";
         }
 
@@ -73,5 +96,16 @@ namespace tp2
             File.WriteAllText("../../../log.txt", text);
             richTextBox1.Text = text;
         }
+        
+        void list_ListChanged(object sender, ListChangedEventArgs e)
+        {
+            String text = "";
+            foreach (String s in list)
+            {
+                text += s + "\n";
+            }
+            File.WriteAllText("../../../log-ListBox.txt", text);
+        }
+
     }
 }

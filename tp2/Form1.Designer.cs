@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace tp2
 {
     partial class Form1
@@ -38,6 +40,7 @@ namespace tp2
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -47,9 +50,11 @@ namespace tp2
             this.groupBox1.Controls.Add(this.radioButton3);
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Location = new System.Drawing.Point(13, 13);
+            this.groupBox1.Location = new System.Drawing.Point(10, 11);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(148, 67);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Size = new System.Drawing.Size(111, 54);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Radio Buttons";
@@ -57,9 +62,10 @@ namespace tp2
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(93, 22);
+            this.radioButton3.Location = new System.Drawing.Point(70, 18);
+            this.radioButton3.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(37, 21);
+            this.radioButton3.Size = new System.Drawing.Size(31, 17);
             this.radioButton3.TabIndex = 2;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "3";
@@ -69,9 +75,10 @@ namespace tp2
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(50, 21);
+            this.radioButton2.Location = new System.Drawing.Point(38, 17);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(37, 21);
+            this.radioButton2.Size = new System.Drawing.Size(31, 17);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "2";
@@ -81,9 +88,10 @@ namespace tp2
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(7, 22);
+            this.radioButton1.Location = new System.Drawing.Point(5, 18);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(37, 21);
+            this.radioButton1.Size = new System.Drawing.Size(31, 17);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "1";
@@ -95,9 +103,11 @@ namespace tp2
             this.groupBox2.Controls.Add(this.checkBox3);
             this.groupBox2.Controls.Add(this.checkBox2);
             this.groupBox2.Controls.Add(this.checkBox1);
-            this.groupBox2.Location = new System.Drawing.Point(167, 13);
+            this.groupBox2.Location = new System.Drawing.Point(125, 11);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(154, 67);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Size = new System.Drawing.Size(116, 54);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "CheckBoxes";
@@ -105,9 +115,10 @@ namespace tp2
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(97, 21);
+            this.checkBox3.Location = new System.Drawing.Point(73, 17);
+            this.checkBox3.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(39, 21);
+            this.checkBox3.Size = new System.Drawing.Size(33, 17);
             this.checkBox3.TabIndex = 2;
             this.checkBox3.Text = "C";
             this.checkBox3.UseVisualStyleBackColor = true;
@@ -116,9 +127,10 @@ namespace tp2
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(52, 21);
+            this.checkBox2.Location = new System.Drawing.Point(39, 17);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(39, 21);
+            this.checkBox2.Size = new System.Drawing.Size(33, 17);
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "B";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -127,9 +139,10 @@ namespace tp2
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(7, 22);
+            this.checkBox1.Location = new System.Drawing.Point(5, 18);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(39, 21);
+            this.checkBox1.Size = new System.Drawing.Size(33, 17);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "A";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -137,22 +150,33 @@ namespace tp2
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(13, 86);
+            this.richTextBox1.Location = new System.Drawing.Point(10, 70);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(308, 156);
+            this.richTextBox1.Size = new System.Drawing.Size(232, 128);
             this.richTextBox1.TabIndex = 2;
             this.richTextBox1.Text = "";
             this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(10, 204);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(232, 160);
+            this.listBox1.TabIndex = 3;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(343, 254);
+            this.ClientSize = new System.Drawing.Size(250, 394);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
@@ -161,6 +185,11 @@ namespace tp2
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
+        }
+
+        private EventHandler listBox1_update()
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
@@ -174,6 +203,7 @@ namespace tp2
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 
