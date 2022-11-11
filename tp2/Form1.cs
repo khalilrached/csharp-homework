@@ -53,37 +53,40 @@ namespace tp2
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
-            //
+            //this with listBox Method
             list.Add(((RadioButton)sender).Name + "=" + ((RadioButton)sender).Checked);
-            
+            //this with richTextBox Method
             state[((RadioButton)sender).Name] = ((RadioButton)sender).Checked;
             richTextBox1.Text += " ";
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
+            //this with listBox Method
             list.Add(((CheckBox)sender).Name + "=" + ((CheckBox)sender).Checked);
-            
+            //this with richTextBox Method
             state[((CheckBox)sender).Name] = ((CheckBox)sender).Checked;
             richTextBox1.Text += " ";
         }
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
+            //this with listBox Method
             list.Add(((CheckBox)sender).Name + "=" + ((CheckBox)sender).Checked);
-            
+            //this with richTextBox Method
             state[((CheckBox)sender).Name] = ((CheckBox)sender).Checked;
             richTextBox1.Text += " ";
         }
 
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
         {
+            //this with listBox Method
             list.Add(((CheckBox)sender).Name + "=" + ((CheckBox)sender).Checked);
-            
+            //this with richTextBox Method
             state[((CheckBox)sender).Name] = ((CheckBox)sender).Checked;
             richTextBox1.Text += " ";
         }
-
+        //richTextBox method
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
             //whenever the text of richTextBox1 change this method will be called
@@ -96,7 +99,7 @@ namespace tp2
             File.WriteAllText("../../../log.txt", text);
             richTextBox1.Text = text;
         }
-        
+        //listBox method
         void list_ListChanged(object sender, ListChangedEventArgs e)
         {
             String text = "";
