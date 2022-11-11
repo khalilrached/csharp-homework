@@ -70,7 +70,7 @@ namespace tp2
             {
                 text += s.Key + "=" + s.Value.ToString() + "\n";
             }
-            File.WriteAllText("C:\\Users\\khali\\OneDrive\\Desktop\\learn-c_sharp\\tp2\\log.txt", text);
+            File.WriteAllText("../../../log.txt", text);
             richTextBox1.Text = text;
         }
     }
