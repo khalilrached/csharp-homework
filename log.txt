@@ -1,0 +1,6 @@
+radioButton1=False
+radioButton2=False
+radioButton3=True
+checkBox1=False
+checkBox2=True
+checkBox3=True
