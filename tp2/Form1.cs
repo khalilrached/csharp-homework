@@ -59,7 +59,7 @@ namespace tp2
             {
                 text += s + "\n";
             }
-            File.WriteAllText("../../../log-ListBox.txt", text);
+            File.WriteAllText("../../../log.txt", text);
         }
 
     }
