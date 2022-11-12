@@ -29,11 +29,7 @@ namespace tp2
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            //this with listBox Method
             list.Add(((RadioButton)sender).Name + "=" + ((RadioButton)sender).Checked);
-            //this with richTextBox Method
-            state[((RadioButton)sender).Name] = ((RadioButton)sender).Checked;
-            richTextBox1.Text += " ";
         }
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
